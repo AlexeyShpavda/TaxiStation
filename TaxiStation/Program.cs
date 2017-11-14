@@ -20,7 +20,7 @@ namespace TaxiStations
             TaxiStation taxiStation = new TaxiStation();
             taxiStation.TaxiStationObj = taxiStation.FillingStation("Input.txt");
 
-
+            //123123123
             Console.WriteLine(taxiStation);
 
             Console.ReadKey();
