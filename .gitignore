@@ -1,6 +1,6 @@
 .vs/
-TaxiStations/obj/
-TaxiStations/TaxiStations.csproj
-TaxiStations/App.config
-TaxiStations/Properties
-TaxiStations/bin
+#TaxiStations/obj/
+#TaxiStations/TaxiStations.csproj
+#TaxiStations/App.config
+#TaxiStations/Properties
+#TaxiStations/bin

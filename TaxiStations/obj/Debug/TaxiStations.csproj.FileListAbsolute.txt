@@ -1,0 +1,14 @@
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\TaxiStations\bin\Debug\TaxiStations.exe.config
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\TaxiStations\bin\Debug\TaxiStations.exe
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\TaxiStations\bin\Debug\TaxiStations.pdb
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\TaxiStations\obj\Debug\TaxiStations.csprojResolveAssemblyReference.cache
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\TaxiStations\obj\Debug\TaxiStations.csproj.CoreCompileInputs.cache
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\TaxiStations\obj\Debug\TaxiStations.exe
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\TaxiStations\obj\Debug\TaxiStations.pdb
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\obj\Debug\TaxiStations.csprojResolveAssemblyReference.cache
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\obj\Debug\TaxiStations.csproj.CoreCompileInputs.cache
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\obj\Debug\TaxiStations.exe
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\obj\Debug\TaxiStations.pdb
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\bin\Debug\TaxiStations.exe.config
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\bin\Debug\TaxiStations.exe
+E:\Programs\C#\TaxiStation\TaxiStation\TaxiStations\bin\Debug\TaxiStations.pdb
