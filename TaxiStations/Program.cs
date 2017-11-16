@@ -20,7 +20,7 @@ namespace TaxiStations
             taxiStation.FillingStation("input.txt");
 
             Console.Write(taxiStation);
-
+            // Test.
             Console.ReadKey();
         }
     }
