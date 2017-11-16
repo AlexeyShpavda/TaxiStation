@@ -17,10 +17,9 @@ namespace TaxiStations
             LineBreaker line = new LineBreaker();
 
             TaxiStation taxiStation = new TaxiStation();
-            taxiStation.TaxiStationObj = taxiStation.FillingStation("Input.txt");
+            taxiStation.FillingStation("input.txt");
 
-
-            Console.WriteLine(taxiStation);
+            Console.Write(taxiStation);
 
             Console.ReadKey();
         }

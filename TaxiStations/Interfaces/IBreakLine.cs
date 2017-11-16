@@ -9,7 +9,6 @@ namespace TaxiStations.Interfaces
 {
     public interface IBreakLine
     {
-
-        string[] ReturnWordArr(char symbol, string str);
+        string[] ReturnWordArr(char symbol, string str, short index);
     }
 }

@@ -14,29 +14,37 @@ namespace TaxiStations.Models
 
         internal List<Car> TaxiStationObj { get => _taxiStationObj; set => _taxiStationObj = value; }
 
-        public List<Car> FillingStation(string fileName)
+        public void FillingStation(string fileName)
         {
-            List<Car> cars = new List<Car>();
             string str;
             using (StreamReader reader = new StreamReader(fileName))
             {
                 while ((str = reader.ReadLine()) != null)
                 {
-                    LineBreaker lr = new LineBreaker();
-                    string[] words = lr.ReturnWordArr(' ', str);
+                    //LineBreaker lr = new LineBreaker();
+                    string[] words = LineBreaker.ReturnWordArr(' ', str, 1);
                     if (str[0] == 'P')
                     // P = Passanger.
                     {
-                        cars.Add(new PassengerTaxi(words[0], words[1], words[2], words[3], words[4], words[5], words[6]));
+                        TaxiStationObj.Add(new PassengerTaxi(words[0], words[1], words[2], words[3], words[4], words[5], words[6]));
                     }
                     else if (str[0] == 'C')
                     // C = Cargo.
                     {
-                        cars.Add(new CargoTaxi(words[0], words[1], words[2], words[3], words[4], words[5], words[6]));
+                        TaxiStationObj.Add(new CargoTaxi(words[0], words[1], words[2], words[3], words[4], words[5], words[6]));
                     }
                 }
             }
-            return cars;
+        }
+
+        public override string ToString()
+        {
+            string str= String.Empty;
+            foreach (var element in TaxiStationObj)
+            {
+                str += element.ToString() + '\n';
+            }
+            return str;
         }
     }
 }

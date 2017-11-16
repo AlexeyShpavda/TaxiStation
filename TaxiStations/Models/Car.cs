@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaxiStations.Models
 {
-    class Car
+    abstract class Car
     {
         string _carName;
         string _carNumber;
@@ -15,11 +15,11 @@ namespace TaxiStations.Models
         short _fuelConsumption;
         // For 100 kilometers.
 
-        public string CarName { get => _carName; set => _carName = value; }
-        public string CarNumber { get => _carNumber; set => _carNumber = value; }
-        public short YearOfManufacture { get => _yearOfManufacture; set => _yearOfManufacture = value; }
-        public int CarMileage { get => _carMileage; set => _carMileage = value; }
-        public short FuelConsumption { get => _fuelConsumption; set => _fuelConsumption = value; }
+        protected string CarName { get => _carName; set => _carName = value; }
+        protected string CarNumber { get => _carNumber; set => _carNumber = value; }
+        protected short YearOfManufacture { get => _yearOfManufacture; set => _yearOfManufacture = value; }
+        protected int CarMileage { get => _carMileage; set => _carMileage = value; }
+        protected short FuelConsumption { get => _fuelConsumption; set => _fuelConsumption = value; }
 
         public Car(string carName, string carNumber, string yearOfManufacture, string carMileage, string fuelConsumption)
         {
@@ -28,6 +28,12 @@ namespace TaxiStations.Models
             YearOfManufacture = Convert.ToInt16(yearOfManufacture);
             CarMileage = Convert.ToInt32(carMileage);
             FuelConsumption = Convert.ToInt16(fuelConsumption);
+        }
+
+        public override string ToString()
+        {
+            string str = CarName + " " + CarNumber + " " + YearOfManufacture.ToString() + " " + CarMileage.ToString() + " " + FuelConsumption.ToString();
+            return str;
         }
     }
 }

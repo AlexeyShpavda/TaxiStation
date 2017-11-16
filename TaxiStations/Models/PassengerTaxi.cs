@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaxiStations.Interfaces;
 
 namespace TaxiStations.Models
 {
@@ -22,6 +23,10 @@ namespace TaxiStations.Models
             TripPrice = Convert.ToInt16(tripPrice);
         }
 
-
+        public override string ToString()
+        {
+            string str = base.ToString() + " " + NumberOfPassangers.ToString() + " " + TripPrice.ToString();
+            return str;
+        }
     }
 }

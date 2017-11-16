@@ -21,5 +21,11 @@ namespace TaxiStations.Models
             Carrying = Convert.ToInt32(carrying);
             PricePerHour = Convert.ToInt16(pricePerHour);
         }
+
+        public override string ToString()
+        {
+            string str = base.ToString() + " " + Carrying.ToString() + " " + PricePerHour.ToString();
+            return str;
+        }
     }
 }

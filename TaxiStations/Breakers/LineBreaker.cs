@@ -10,11 +10,11 @@ using System.Text.RegularExpressions;
 
 namespace TaxiStations.Readers
 {
-    class LineBreaker : IBreakLine
+    class LineBreaker //: IBreakLine
     {
-        public string[] ReturnWordArr(char symbol, string str)
+        static public string[] ReturnWordArr(char symbol, string str, short index)
         {
-            return str.Split(new char[] { symbol }, StringSplitOptions.RemoveEmptyEntries).Skip(1).ToArray();
+            return str.Split(new char[] { symbol }, StringSplitOptions.RemoveEmptyEntries).Skip(index).ToArray();
         }
     }
 }
