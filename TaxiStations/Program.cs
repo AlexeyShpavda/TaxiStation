@@ -14,7 +14,6 @@ namespace TaxiStations
         static void Main()
         {
             string l = "====================================================================================================================";
-            LineBreaker line = new LineBreaker();
 
             TaxiStation taxiStation = new TaxiStation();
             taxiStation.ReadingFile("input.txt");
