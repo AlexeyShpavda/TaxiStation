@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 
 namespace TaxiStations.Readers
 {
-    class LineBreaker //: IBreakLine
+    class LineBreaker
     {
         static public string[] ReturnWordArr(char symbol, string str, short index)
         {

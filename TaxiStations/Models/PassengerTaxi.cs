@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TaxiStations.Interfaces;
 
 namespace TaxiStations.Models
 {
@@ -25,8 +24,12 @@ namespace TaxiStations.Models
 
         public override string ToString()
         {
-            string str = base.ToString() + " " + NumberOfPassangers.ToString() + " " + TripPrice.ToString();
-            return str;
+            return base.ToString() + String.Format("|NumberOfPassangers: {0,-2}|TripPrice: {1,-3}", NumberOfPassangers, TripPrice);
+        }
+
+        public override int ReturnsIncome(short length)
+        {
+            return length * (TripPrice/5);
         }
     }
 }

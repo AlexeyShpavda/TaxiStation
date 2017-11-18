@@ -43,7 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Breakers\LineBreaker.cs" />
-    <Compile Include="Interfaces\IBreakLine.cs" />
+    <Compile Include="Interfaces\IReadFiles.cs" />
+    <Compile Include="Interfaces\IWriteToFiles.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\CargoTaxi.cs" />
     <Compile Include="Models\PassengerTaxi.cs" />

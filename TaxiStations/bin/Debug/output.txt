@@ -1,0 +1,4 @@
+Name: Audi      |Number: 1111|Year: 2017|Mileage: 5000   |Consumption: 10 |NumberOfPassangers: 4 |TripPrice: 5  
+Name: Marcedes  |Number: 3333|Year: 2015|Mileage: 15000  |Consumption: 10 |Carrying: 3000        |PricePerHour: 10 
+Name: BMW       |Number: 2222|Year: 2015|Mileage: 20000  |Consumption: 11 |NumberOfPassangers: 4 |TripPrice: 5  
+Income of TaxiStation = 275

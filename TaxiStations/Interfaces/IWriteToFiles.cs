@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TaxiStations.Models;
 
 namespace TaxiStations.Interfaces
 {
-    public interface IBreakLine
+    interface IWriteToFiles
     {
-        string[] ReturnWordArr(char symbol, string str, short index);
+        void WriteToFiles(string fileName);
     }
 }

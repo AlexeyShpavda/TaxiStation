@@ -24,8 +24,15 @@ namespace TaxiStations.Models
 
         public override string ToString()
         {
-            string str = base.ToString() + " " + Carrying.ToString() + " " + PricePerHour.ToString();
-            return str;
+            return base.ToString() + String.Format("|Carrying: {0,-12}|PricePerHour: {1,-3}", Carrying, PricePerHour);
+        }
+
+        public override int ReturnsIncome(short hours)
+        {
+            if(hours <= 1)
+                return hours * PricePerHour;
+            else
+                return ((1 * PricePerHour) + ((hours - 1) * (PricePerHour / 2)));
         }
     }
 }
